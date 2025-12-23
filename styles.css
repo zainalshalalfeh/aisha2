@@ -2137,4 +2137,30 @@ input:checked + .toggle-slider:before {
     z-index: 10000 !important;
   }
 }
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    transform: translateX(100%) !important;
+    width: 75% !important;
+    height: 100vh !important;
+    background: #fff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    transition: 0.3s ease !important;
+    z-index: 9999 !important;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0) !important;
+  }
+
+  .mobile-menu-btn {
+    display: block !important;
+  }
+}
+
 
